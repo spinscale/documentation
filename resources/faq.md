@@ -13,7 +13,7 @@ If you have any questions we want to hear from you. Your feedback will help us i
 
 ## I have never used a search engine before. Can I use MeiliSearch anyway?
 
-Of course! No knowledge of ElasticSearch or Solr is required to use MeiliSearch.
+Of course! No knowledge of Elasticsearch or Solr is required to use MeiliSearch.
 
 MeiliSearch is really **easy to use** and thus accessible to all kinds of developers.
 

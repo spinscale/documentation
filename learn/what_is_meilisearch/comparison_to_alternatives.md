@@ -10,7 +10,7 @@ There are many search engines on the web, both open-source and otherwise. Decidi
 
 - In the [comparison table](#comparison-table), we present a general overview of the differences between MeiliSearch and other search engines
 
-- In the [approach comparison](#approach-comparison), instead, we focus on how MeiliSearch measures against [ElasticSearch](#meilisearch-vs-elasticsearch) and [Algolia](#meilisearch-vs-algolia), currently two of the biggest solutions available in the market
+- In the [approach comparison](#approach-comparison), instead, we focus on how MeiliSearch measures against [Elasticsearch](#meilisearch-vs-elasticsearch) and [Algolia](#meilisearch-vs-algolia), currently two of the biggest solutions available in the market
 
 - Finally, we end this article with [an in-depth analysis of the broader search engine landscape](#a-quick-look-at-the-search-engine-landscape)
 
@@ -24,9 +24,9 @@ Please be advised that many of the search products described below are constantl
 
 |   | MeiliSearch | Algolia | Typesense | Elasticsearch |
 |---|:----:|:----:|:-----:|:----:|
-| Source code licensing | [MIT](https://choosealicense.com/licenses/mit/) <br> (Fully open-source) |  Closed-source  | [GPL-3](https://choosealicense.com/licenses/gpl-3.0/) <br> (Fully open-source) | SSPL <br>([Not open-source](https://opensource.org/node/1099))  |
+| Source code licensing | [MIT](https://choosealicense.com/licenses/mit/) <br> (Fully open-source) |  Closed-source  | [GPL-3](https://choosealicense.com/licenses/gpl-3.0/) <br> (Fully open-source) | SSPL/Elastic License 2.0 <br>([Not open-source](https://opensource.org/node/1099))  |
 | Built with | Rust <br> [Check out why we believe in Rust](https://www.abetterinternet.org/docs/memory-safety/). | C++ | C++ | Java |
-| Data storage | Disk with Memory Mapping -- Not limited by RAM | Limited by RAM | Limited by RAM | Disk with RAM cache |
+| Data storage | Disk with Memory Mapping -- Not limited by RAM | Limited by RAM | Limited by RAM | Disk with Memory Mapping - Not limited by RAM |
 
 ### Features
 
@@ -51,7 +51,7 @@ Can't find a client you'd like us to support? [Submit your idea or vote for it](
 | [Dart client](https://github.com/meilisearch/meilisearch-dart)               | ✅          | ✅     |        ✅   |       ❌        |
 | [Symfony](https://github.com/meilisearch/meilisearch-symfony) | ✅ | ✅ | ❌ | ❌ |
 | [Django](https://roadmap.meilisearch.com/c/60-django) | ❌ | ✅ | ❌ | ❌ |
-| [Rails](https://github.com/meilisearch/meilisearch-rails) | ✅ | ✅ | 🔶 <br>WIP | ❌ ||
+| [Rails](https://github.com/meilisearch/meilisearch-rails) | ✅ | ✅ | 🔶 <br>WIP | ✅ |
 | [Official Laravel Scout Support](https://github.com/laravel/scout) | ✅ | ✅ | ❌ | ❌ |
 | [UI Search Kit](https://github.com/meilisearch/instant-meilisearch) | ✅ | ✅ | ✅ | ✅ |
 | [Docsearch](https://github.com/meilisearch/docs-scraper) | ✅ | ✅ | ✅ | ❌ |
@@ -73,9 +73,9 @@ Can't find a client you'd like us to support? [Submit your idea or vote for it](
 
 |   | MeiliSearch | Algolia | Typesense | Elasticsearch |
 |---|:---:|:----:|:---:|:---:|
-| Typo tolerant  | ✅ | ✅ | ✅ | 🔶 <br>Needs to be specified by fuzzy queries |
+| Typo tolerant  | ✅ | ✅ | ✅ | 🔶 <br>Needs to be specified as query parameter |
 | Orderable ranking rules | ✅ | ✅ | 🔶 <br>Tie-breaking order is limited by a unique scoring rule | ❌|
-| Custom rules | ✅ | ✅ | 🔶 <br>Limited to one default sorting rule | 🔶 <br>Function score query
+| Custom rules | ✅ | ✅ | 🔶 <br>Limited to one default sorting rule | ✅ |
 | Query field weights | ✅ | ✅ | ✅ | ✅ |
 | Synonyms | ✅ | ✅ | ✅ | ✅ |
 | Stop words | ✅ | ✅ | ❌ | ✅ |
@@ -242,6 +242,6 @@ While Algolia offers the most advanced and powerful search features, this effici
 
 MeiliSearch is dedicated to all types of developers. Our goal is to deliver a developer-friendly tool, easy to install, and to deploy. Because providing an out-of-the-box awesome search experience for the end-users matters to us, we want to give everyone access to the best search experiences out there with minimum effort and without requiring any financial resources.
 
-Usually, when a developer is looking for a search tool to integrate into their application, they will go for ElasticSearch or less effective choices. Even if Elasticsearch is not best suited for this use case, it remains a great open-source solution. However, it requires technical know-how to execute advanced features and hence more time to customize it to your business.
+Usually, when a developer is looking for a search tool to integrate into their application, they will go for Elasticsearch or less effective choices. Even if Elasticsearch is not best suited for this use case, it remains a great open-source solution. However, it requires technical know-how to execute advanced features and hence more time to customize it to your business.
 
 We aim to become the default solution for developers.
